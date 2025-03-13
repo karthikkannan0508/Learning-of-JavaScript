@@ -21,11 +21,12 @@
         function1();
         */
 
-            function calculationTax (parameter1) {
-            console.log( parameter1 * 0.1);
+            function calculationTax (cost, taxPercent = 0.1) {
+            
+            console.log( cost * taxPercent);
             }
 
-            calculationTax(2000);
+            calculationTax(2000, 0.2);
             calculationTax(5000);
     </script>
 </body>
