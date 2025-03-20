@@ -8,11 +8,15 @@
 <body>
     
     <button>hello</button>
+    <button class="js-button">Second Button</button>
 
     <script>
-        console.log( document.querySelector('button'));
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button').innerHTML = 'Changed';
     
-
+        const buttonElement = document.querySelector('.js-button');
+        console.log(buttonElement);
+        
 
         /*
         // DOM - Document Object Model
